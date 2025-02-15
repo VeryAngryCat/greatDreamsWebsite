@@ -12,8 +12,15 @@ body {
 }
 
 .main {
-    width: 75%;
-    height: 75vh;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+.bgPicture {
+    width: 75vw;
+    height: 400px;
     background:
         url('darkForestMainPage.jpeg') center center / cover,
         linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 80%, rgba(0, 0, 0, 0.8) 100%);
@@ -21,6 +28,31 @@ body {
     border-radius: 20px;
     border: 10px solid rgba(0, 0, 0, 0.8);
     box-sizing: border-box;
+    margin: 25% auto;
+}
+
+.title {
+    position: absolute;
+    top: -10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 200px;
+    background: url(transparentTitle.png);
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .title {
+        background-image: url('transparentTitle.png');
+
+    }
+
+    .bgPicture {
+        margin: 35% auto;
+    }
 }
 
 p {
