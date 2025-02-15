@@ -1,5 +1,5 @@
 body {
-    background-image: url('bg\ survival.jpg'); /* Change this to your image */
+    background-image: url('.jpg'); /* Change this to your image */
     background-size: cover; /* Cover the full page */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent tiling */
