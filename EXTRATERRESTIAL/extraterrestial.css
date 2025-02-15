@@ -1,5 +1,9 @@
 body {
-    background-color: #080b2b; /* Dark gray background */
+    background-image: url('Extraterrestrials bg.jpg'); /* Change this to your image */
+    background-size: cover; /* Cover the full page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-attachment: fixed; /* Fixed while scrolling */
     color: white; /* Set text color to white for contrast */
     font-family: Arial, sans-serif; /* Set a readable font */
     margin: 0;
@@ -63,36 +67,35 @@ header {
     color: #007BFF;
     font-weight: bold;
 }
-
-/* Subtopic Links */
 .subtopics {
-    margin: 20px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-}
-
-.subtopics ul {
-    list-style: none;
+    list-style: none; /* Removes default bullets */
     padding: 0;
+    width: 850px; /* Adjust width as needed */
+    background: rgba(255, 255, 255, 0.9); /* Light background */
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Light shadow */
+    margin: 0 auto;
 }
 
-.subtopics ul li {
-    display: inline;
-    margin: 0 15px;
+.subtopics li {
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc; /* Separator line */
 }
 
-.subtopics ul li a {
+.subtopics li:last-child {
+    border-bottom: none; /* Removes last separator */
+}
+
+.subtopics a {
     text-decoration: none;
-    color: #333;
-    font-size: 18px;
+    color: #007bff; /* Blue link color */
     font-weight: bold;
+    display: block;
 }
 
-.subtopics ul li a:hover {
-    color: #007BFF;
+.subtopics a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    background: rgba(0, 123, 255, 0.1); /* Light hover effect */
 }
-
-
