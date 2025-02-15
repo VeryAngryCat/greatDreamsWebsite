@@ -28,7 +28,7 @@ header {
 }
 
 
-/* 4️⃣ Image Gallery */
+/* Image Gallery */
 .image-gallery {
     display: flex;
     flex-wrap: wrap; /* Allows images to wrap on small screens */
