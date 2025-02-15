@@ -1,5 +1,14 @@
-body {
-    background-color: black;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background: url('darkForestMainPage.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 75vh;
+
 }
 
 p {
