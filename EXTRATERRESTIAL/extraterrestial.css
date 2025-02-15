@@ -1,5 +1,5 @@
 body {
-    background-color: #1e1e1e; /* Dark gray background */
+    background-color: #080b2b; /* Dark gray background */
     color: white; /* Set text color to white for contrast */
     font-family: Arial, sans-serif; /* Set a readable font */
     margin: 0;
@@ -25,4 +25,21 @@ header {
     height: auto;
     display: block;
     margin: 0 auto;
+}
+/* 4️⃣ Image Gallery */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allows images to wrap on small screens */
+    justify-content: center;
+    gap: 20px; /* Spacing between images */
+    padding: 20px;
+}
+
+.image-item {
+    background: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
 }
