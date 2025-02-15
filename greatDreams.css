@@ -1,2 +1,9 @@
+body {
+    background-color: cornflowerblue;
+}
+
 p {
+    font-family: Verdana;
+    font-size: medium;
+    color: black;
 }
