@@ -28,7 +28,7 @@ header {
 }
 
 
-/* Image Gallery */
+/* 4️⃣ Image Gallery */
 .image-gallery {
     
     display: flex;
@@ -65,38 +65,34 @@ header {
 }
 
 /* Subtopic Links */
-.sub-topic-links {
+.subtopics {
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.subtopics ul {
     list-style: none;
     padding: 0;
-    width: 900px; /* Adjust width as needed */
-    height: 400px;
-    background: rgba(255, 255, 255, 0.9); /* Light background */
-    border-radius: 8px; /* Optional rounded corners */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Light shadow */
-    
 }
 
-.sub-topic-links li {
-    padding: 12px;
-    text-align: center;
-    font-size: 16px;
-    border-bottom: 1px solid #ccc; /* Separator line */
+.subtopics ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.sub-topic-links li:last-child {
-    border-bottom: none; /* Removes last separator */
-}
-
-.sub-topic-links a {
+.subtopics ul li a {
     text-decoration: none;
-    color: #007bff; /* Blue link color */
+    color: #333;
+    font-size: 18px;
     font-weight: bold;
-    display: block;
 }
 
-.sub-topic-links a:hover {
-    color: #0056b3; /* Darker blue on hover */
-    background: rgba(0, 123, 255, 0.1); /* Light hover effect */
+.subtopics ul li a:hover {
+    color: #007BFF;
 }
 
 
