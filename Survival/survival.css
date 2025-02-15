@@ -10,3 +10,42 @@ body {
     padding: 0;
     text-align: center;
 }
+/* Title Image (Header Section) */
+header {
+    padding: 20px;
+}
+
+.title {
+    font-family: 'Times New Roman', sans-serif; /* Change to any font */
+    font-size: 60px; /* Adjust size */
+    font-weight: bold; /* Make it bold */
+    text-align: left; 
+    color: #fffbfb; /* Dark gray text */
+}
+
+.quote-box-container {
+    display: flex;
+    flex-direction: column; /* Stack quote and box vertically */
+    align-items: flex-start; /* Align to the left */
+    margin-left: 10px; /* Adjust spacing from the left */
+}
+
+.quote {
+    margin-bottom: 10px; /* Reduce space between quote and box */
+    font-size: 30px;
+}
+
+.box {
+    width: 290px;
+    padding: 10px 20px 20px 20px;
+    background: rgba(216, 178, 117, 0.8);
+    color: #030303;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 0; /* Ensure it stays close to the quote */
+    margin: 100px 20px 0 20px; /* Adds more space on top */
+
+}
+.italic {
+    font-style: italic;
+}
