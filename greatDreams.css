@@ -43,6 +43,30 @@ body {
     background-size: cover;
 }
 
+.buttonMenu {}
+
+.button {
+    background-color: mediumaquamarine;
+    border: none;
+    color: black;
+    font-family: 'Gill Sans';
+    text-align: center;
+    font-size: 16px;
+    padding: 12px 28px;
+    border-radius: 12px;
+    transition-duration: 0.5s;
+    width: 250px;
+    cursor: pointer;
+}
+
+.button span {
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: aliceblue;
+}
+
 @media (max-width: 768px) {
     .title {
         background-image: url('transparentTitle.png');
@@ -53,6 +77,10 @@ body {
 
     .bgPicture {
         margin: 35% auto;
+    }
+
+    .button {
+        width: 150px;
     }
 }
 
