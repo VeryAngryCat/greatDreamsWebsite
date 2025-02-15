@@ -33,13 +33,11 @@ body {
 
 .title {
     position: absolute;
-    top: -10px;
+    top: 30px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    height: 200px;
-    background: url(transparentTitle.png);
+    width: 700px;
+    height: 100px;
+    background: url(transparentTitleLong.png);
     background-position: center;
     background-size: cover;
 }
@@ -47,7 +45,8 @@ body {
 @media (max-width: 768px) {
     .title {
         background-image: url('transparentTitle.png');
-
+        width: 300px;
+        height: 200px;
     }
 
     .bgPicture {
