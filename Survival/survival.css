@@ -1,5 +1,5 @@
 body {
-    background-image: url('bg.jpg'); /* Change this to your image */
+    background-image: url('meadow-grassland-field-grass-nature-wallpaper-preview.jpg'); /* Change this to your image */
     background-size: cover; /* Cover the full page */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent tiling */
@@ -16,7 +16,7 @@ header {
 }
 
 .title {
-    font-family: 'Times New Roman', sans-serif; /* Change to any font */
+    font-family: 'Times New Roman', Times, serif !important; /* Change to any font */
     font-size: 60px; /* Adjust size */
     font-weight: bold; /* Make it bold */
     text-align: left; 
@@ -31,19 +31,20 @@ header {
 }
 
 .quote {
-    margin-bottom: 10px; /* Reduce space between quote and box */
-    font-size: 30px;
+    margin-bottom: 20px; /* Reduce space between quote and box */
+    font-size: 28px;
+    font-family:monospace !important;
 }
 
 .box {
-    width: 290px;
+    width: 350px;
     padding: 10px 20px 20px 20px;
-    background: rgba(216, 178, 117, 0.8);
-    color: #030303;
+    background: rgba(243, 243, 241, 0.8);
+    color: #080808;
     border-radius: 10px;
     text-align: left;
     margin-top: 0; /* Ensure it stays close to the quote */
-    margin: 100px 20px 0 20px; /* Adds more space on top */
+    margin: 50px 20px 0 20px; /* Adds more space on top */
 
 }
 .italic {
