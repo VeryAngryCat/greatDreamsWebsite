@@ -44,6 +44,7 @@ body {
 }
 
 .buttonMenu {
+    margin-top: 50px;
     position: absolute;
     bottom: 30px;
     left: 50%;
