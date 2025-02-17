@@ -8,11 +8,13 @@ p {
 }
 
 #temp-link-storage {
-
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .bgPic {
-
+    
 }
 
 .sideLinkMenu {
@@ -20,5 +22,5 @@ p {
 }
 
 .linkBar {
-    
+
 }
