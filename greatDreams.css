@@ -63,7 +63,7 @@ body {
     color: black;
     font-family: 'Gill Sans';
     text-align: center;
-    font-size: 20px;
+    font-size: 19px;
     padding: 12px 28px;
     margin: 5px;
     border-radius: 12px;
@@ -77,7 +77,7 @@ body {
     background-color: aliceblue;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .title {
         background-image: url('transparentTitle.png');
         top: 10px;
@@ -97,5 +97,10 @@ body {
 
     .button {
         font-size: 11px;
+    }
+    @media (max-width: 600px){
+        .button {
+            font-size: 9px;
+        }
     }
 }
