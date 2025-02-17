@@ -32,16 +32,16 @@ a {
     height: 100px;
     background-position: center;
     background-size: cover;
+    z-index: 2;
 }
 .bgPic {
     position: fixed;
     width: 60vw;
     aspect-ratio: 1/1;
-    background:
-        url('moon.jpg') center center / cover;
+    background: url('moon.jpg') center center / cover;
     z-index: 1;
     margin-right: auto;
-    top: 120px;
+    top: 200px;
 }
 
 .sideLinkMenu {
