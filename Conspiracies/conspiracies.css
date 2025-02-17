@@ -22,7 +22,17 @@ a {
 
 #temp-link-storage {
 }
-
+.title {
+    position: absolute;
+    background: url(9:11.png);
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+}
 .bgPic {
     position: fixed;
     width: 60vw;
@@ -31,7 +41,7 @@ a {
         url('moon.jpg') center center / cover;
     z-index: 1;
     margin-right: auto;
-    top: 100px;
+    top: 120px;
 }
 
 .sideLinkMenu {
@@ -59,6 +69,7 @@ a {
     justify-content: space-between;
     z-index: 3;
     left: 50%;
+    margin-top: 110px;
     transform: translateX(-50%)
 }
 
