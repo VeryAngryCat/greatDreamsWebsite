@@ -7,7 +7,10 @@ p {
     color: black;
 }
 a {
-    color: black;
+    color: khaki;
+}
+a:visited {
+    color:black;
 }
 .numPage {
     position: relative;
@@ -77,6 +80,9 @@ a {
     z-index: 2;
     width: auto;
     align-items: center;
+}
+.linkMenu a:hover{
+    background:orange;
 }
 
 @media (max-width: 768px) {

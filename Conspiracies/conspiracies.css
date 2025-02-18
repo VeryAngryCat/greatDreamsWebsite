@@ -9,6 +9,10 @@ p {
 a {
     color: white;
 }
+a:visited {
+    color:black;
+}
+
 .conspPage {
     position: relative;
     width: 100%;
@@ -64,6 +68,9 @@ a {
     width: 90vw;
     align-items: center;
 }
+.sideLinkMenu a:hover {
+    background: red;
+}
 
 .linkBar {
     display: flex;
@@ -86,8 +93,12 @@ a {
     border-right: none;
     box-sizing: border-box;
     padding: 20px;
-    color:white;
     text-decoration: none;
+}
+
+.linkBar a:hover {
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
 }
 
 @media (max-width: 768px) {
