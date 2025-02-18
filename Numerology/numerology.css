@@ -37,6 +37,7 @@ a {
     position: relative;
     margin-top: 150px;
     width: 25vw;
+    min-height: 50px;
     aspect-ratio: 1/1;
     background: url('shape.png') center center / cover;
     z-index: 2;
@@ -50,7 +51,7 @@ a {
     justify-self: center;
     grid-template-columns: repeat(2, 1fr);
     width: 90vw;
-    gap: 2px;
+    gap: 5px;
     z-index: 2;
     justify-content: space-evenly;
 }
@@ -67,6 +68,9 @@ a {
 }
 
 @media (max-width: 768px) {
+    .linkMenu {
+        grid-template-columns: repeat(1, 1fr);
+    }
     .title {
         width: 420px;
         height: 100px;
