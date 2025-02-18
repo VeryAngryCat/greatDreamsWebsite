@@ -8,7 +8,7 @@ body {
     height: auto;
     min-height: 100vh;
     background-color: rgb(3, 24, 3);
-    background-image: url('Untitled\ design.png'); 
+    background-image: url('Untitled\ design-2.png'); 
     background-size: cover; /* Cover the full page */
     background-position: center; /* Center the image */
 
@@ -29,9 +29,9 @@ body {
 }
 
 .title {
-    font-size: 36px;
+    font-size: 50px;
     font-weight: bold;
-    color: white;
+    color: rgb(13, 2, 2);
     text-align: left;
 }
 
@@ -52,10 +52,10 @@ body {
 .subtopics {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-    gap: 20px 70px;
+    gap: 20px 40px;
     margin-top: 20px;
     
-    width: fit-content; /* Makes the grid as wide as its content */
+    width: 100%; /* Makes the grid as wide as its content */
     margin-left: auto; /* Centers it horizontally */
     margin-right: auto; /* Centers it horizontally */
 }
@@ -73,6 +73,9 @@ body {
     justify-content: center;
     border: 2px solid white;
     transition: 0.3s;
+    width: 250px; /* Increase this value to make the boxes wider */
+    max-width: 100%; /* Prevents excessive stretching */
+    padding: 15px 20px; /* Adjust padding to keep text readable */
 }
 
 .sub-box:hover {
@@ -94,7 +97,7 @@ body {
 
 .right img {
     width: 250px;
-    height: 250px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid white;
