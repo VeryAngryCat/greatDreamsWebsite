@@ -38,11 +38,6 @@ body {
     text-align: center;
 }
 
-.highlight {
-    background-color: white;
-    padding: 5px;
-}
-
 .subtopics {
     display: flex;
     flex-direction: column;
@@ -57,7 +52,15 @@ body {
     padding: 10px 15px;
     border-radius: 5px;
     font-weight: bold;
-    width: fit-content;
+    width: 150px; /* Fixed width for uniform boxes */
+    text-align: center; /* Centers text inside the box */
+    display: block; /* Makes the link fill the box */
+    border: 2px solid white; /* Adds a border around each box */
+    transition: 0.3s; /* Smooth hover effect */
+}
+.sub-box:hover {
+    background-color: white;
+    color: black;
 }
 
 .right {
