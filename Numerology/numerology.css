@@ -2,16 +2,18 @@ body{
     background-color: black;
 }
 p {
-    font-family: Verdana;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
     color: black;
 }
 a {
+    color:white;
+    text-decoration: none;
+}
+a:hover {
     color:black;
 }
-a:visited {
-    color:mediumvioletred;
-}
+
 .menuIcon {
     position: absolute;
     top: 10px;
@@ -21,12 +23,12 @@ a:visited {
 .icon {
     position: relative;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 25px;
     transition: all 0.3s ease-in-out;
     z-index: 4;
 }
 .icon.open {
-    transform: rotate(90deg);
+    font-size: 20px;
     z-index: 4;
 }
 .menuLinks {
@@ -34,10 +36,11 @@ a:visited {
     padding: 20px;
     display: none;
     flex-direction: column;
+    width: 30vw;
     right: -5px;
     top: 0px;
     border: 1px solid grey;
-    background: aliceblue;
+    background: lightgrey;
     z-index: 3;
 }
 .menuLinks a {
@@ -57,7 +60,7 @@ a:visited {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background:khaki;
+    background:goldenrod;
 }
 
 .title {
@@ -81,19 +84,23 @@ a:visited {
     position:absolute;
     background: center center / cover;
     width: 25vw;
+    top: -20px;
     aspect-ratio: 1/1;
     z-index: 2;
-    border: 2px solid black;
-    right: 100px;
-    margin-right: 0px;
+    right: 300px;
+    margin-right: -150px;
 }
 
 .bgPic p  {
-    position:absolute;
+    position:relative;
     top: -10px;
     width: 50vw;
-    left: -40px;
     z-index: 2;
+    padding: 5px;
+}
+.bgPic2 {
+    position: fixed;
+    top: 400px;
 }
 
 .linkList {
@@ -109,8 +116,8 @@ a:visited {
 }
 
 .linkList a{
-    background:peru;
-    border: none;
+    background:black;
+    border-radius: 5px;
     padding: 20px;
     display: inline-block;
     margin-bottom: 5px;
@@ -119,7 +126,13 @@ a:visited {
     align-items: center;
 }
 .linkList a:hover{
-    background:orange;
+    background:darkgrey;
+}
+
+@media (max-width: 1250px) {
+    .bgPic p {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -133,5 +146,6 @@ a:visited {
     }
     .bgPic p {
         font-size: 10px;
+        top: -20px;
     }
 }
