@@ -5,59 +5,76 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: rgb(8, 58, 8);
+    height: auto;
+    min-height: 100vh;
+    background-color: rgb(3, 24, 3);
+    background-image: url('On\ set\ with\ the\ Blackmagic\ Cam\ 🎥.jpg'); 
+    background-size: cover; /* Cover the full page */
+    background-position: center; /* Center the image */
+
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-attachment: fixed; /* Fixed while scrolling */
 }
 
 .container {
     display: flex;
+    flex-direction: column; /* Stacks title and content */
     width: 80%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Aligns subtopics to the left */
-    width: 30%;
 }
 
 .middle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
     text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 .title {
     font-size: 36px;
     font-weight: bold;
-    color: black;
-    text-align: center;
+    color: white;
+    text-align: left;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start; /* Keeps left side to the left */
+    align-items: flex-start;
+}
+
+.left {
+    width: 50%; /* Takes left side space */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .subtopics {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 20px 70px;
     margin-top: 20px;
+    
+    width: fit-content; /* Makes the grid as wide as its content */
+    margin-left: auto; /* Centers it horizontally */
+    margin-right: auto; /* Centers it horizontally */
 }
 
 .sub-box {
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 10px 15px;
+    padding: 15px;
     border-radius: 5px;
     font-weight: bold;
-    width: 150px; /* Fixed width for uniform boxes */
-    text-align: center; /* Centers text inside the box */
-    display: block; /* Makes the link fill the box */
-    border: 2px solid white; /* Adds a border around each box */
-    transition: 0.3s; /* Smooth hover effect */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    transition: 0.3s;
 }
+
 .sub-box:hover {
     background-color: white;
     color: black;
@@ -69,11 +86,15 @@ body {
     gap: 20px;
     width: 30%;
     align-items: center;
+    position: fixed; /* Keeps images fixed */
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .right img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid white;
