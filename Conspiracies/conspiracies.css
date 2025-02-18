@@ -21,6 +21,7 @@ a {
 }
 
 #temp-link-storage {
+    display: none;
 }
 
 .title {
