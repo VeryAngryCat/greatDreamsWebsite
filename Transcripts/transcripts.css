@@ -6,53 +6,72 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #0d3e1d;
+    background-color: rgb(8, 58, 8);
 }
 
 .container {
     display: flex;
     width: 80%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .left {
     display: flex;
     flex-direction: column;
+    align-items: flex-start; /* Aligns subtopics to the left */
+    width: 30%;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
     align-items: center;
     width: 40%;
     text-align: center;
 }
 
-.top-links, .bottom-links {
-    display: flex;
-    gap: 15px;
-}
-
-.top-links a, .bottom-links a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    font-weight: bold;
-}
-
 .title {
     font-size: 36px;
     font-weight: bold;
-    margin: 20px 0;
+    color: black;
+    text-align: center;
+}
+
+.highlight {
+    background-color: white;
+    padding: 5px;
+}
+
+.subtopics {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.sub-box {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: fit-content;
 }
 
 .right {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 40%;
+    width: 30%;
     align-items: center;
 }
 
 .right img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #333;
+    border: 3px solid white;
 }
