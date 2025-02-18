@@ -4,10 +4,10 @@ body{
 p {
     font-family: Verdana;
     font-size: 16px;
-    color: white;
+    color: black;
 }
 a {
-    color: white;
+    color: black;
 }
 .numPage {
     position: relative;
@@ -17,7 +17,7 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background: black;
+    background:khaki;
 }
 
 #temp-link-storage {
@@ -26,12 +26,12 @@ a {
 
 .title {
     position: absolute;
-    background: url();
-    top: 0px;
+    background: url(numTitle.png);
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 500px;
-    height: 100px;
+    width: 520px;
+    height: 120px;
     background-position: center;
     background-size: cover;
     z-index: 2;
@@ -48,15 +48,16 @@ a {
 }
 
 .linkMenu {
-    display:flex;
-    flex-direction: column;
-    gap: 10px;
+    display:grid;
+    flex-direction:row;
+    grid-template-columns: auto auto  auto;
+    gap: 2px;
     z-index: 2;
     margin-top: 500px;
 }
 
 .linkMenu a{
-    background:darkred;
+    background:chocolate;
     border: none;
     padding: 10px;
     display: inline-block;
@@ -67,8 +68,8 @@ a {
 }
 
 @media (max-width: 768px) {
-    .sideLinkMenu {
-        width: 100%;
-        margin-top: 400px;
+    .title {
+        width: 420px;
+        height: 100px;
     }
 }
