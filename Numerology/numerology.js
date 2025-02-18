@@ -7,7 +7,7 @@ function shuffleArray(array) {
 }
 
 function randomiseLinks() {
-    const container = document.getElementById('temp-link-storage');
+    const container = document.querySelector('.linkMenu');
     const links = Array.from(container.getElementsByTagName('a'));
     return shuffleArray(links);
 }
