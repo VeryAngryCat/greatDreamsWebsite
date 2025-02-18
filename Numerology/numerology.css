@@ -20,10 +20,6 @@ a {
     background:khaki;
 }
 
-#temp-link-storage {
-    display: none;
-}
-
 .title {
     position: absolute;
     background: url(numTitle.png);
@@ -38,32 +34,35 @@ a {
 }
 
 .bgPic {
-    position: fixed;
-    width: 60vw;
+    position: relative;
+    margin-top: 150px;
+    width: 25vw;
     aspect-ratio: 1/1;
-    background: url('') center center / cover;
-    z-index: 1;
-    margin-right: auto;
-    top: 200px;
+    background: url('shape.png') center center / cover;
+    z-index: 2;
+    border: 2px solid black;
 }
 
 .linkMenu {
+    position: relative;
+    margin-top: 50px;
     display:grid;
-    flex-direction:row;
-    grid-template-columns: auto auto  auto;
+    justify-self: center;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90vw;
     gap: 2px;
     z-index: 2;
-    margin-top: 500px;
+    justify-content: space-evenly;
 }
 
 .linkMenu a{
     background:chocolate;
     border: none;
-    padding: 10px;
+    padding: 20px;
     display: inline-block;
     margin-bottom: 5px;
     z-index: 2;
-    width: 90vw;
+    width: auto;
     align-items: center;
 }
 
