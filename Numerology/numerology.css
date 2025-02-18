@@ -35,18 +35,30 @@ a {
 
 .bgPic {
     position: relative;
-    margin-top: 150px;
+    margin-top: 200px;
+}
+.bgPic img {
+    position:absolute;
+    background: center center / cover;
     width: 25vw;
-    min-height: 50px;
     aspect-ratio: 1/1;
-    background: url('shape.png') center center / cover;
     z-index: 2;
     border: 2px solid black;
+    right: 100px;
+    margin-right: 0px;
+}
+
+.bgPic p  {
+    position:absolute;
+    top: -10px;
+    width: 50vw;
+    left: -40px;
+    z-index: 2;
 }
 
 .linkMenu {
     position: relative;
-    margin-top: 50px;
+    margin-top: 400px;
     display:grid;
     justify-self: center;
     grid-template-columns: repeat(2, 1fr);
@@ -69,10 +81,14 @@ a {
 
 @media (max-width: 768px) {
     .linkMenu {
+        margin-top: 250px;
         grid-template-columns: repeat(1, 1fr);
     }
     .title {
         width: 420px;
         height: 100px;
+    }
+    .bgPic p {
+        font-size: 10px;
     }
 }
