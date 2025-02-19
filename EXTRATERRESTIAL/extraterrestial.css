@@ -23,13 +23,54 @@ body {
 header {
     padding: 20px;
 }
-
 .title-image {
     max-width: 100%; 
     height: auto;
     display: block;
     margin: 0 auto;
 }
+
+/* Code for menu bar*/
+.menuIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 4;
+}
+.icon {
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all 0.3s ease-in-out;
+    z-index: 5;
+    color: white;
+}
+.icon.open {
+    font-size: 20px;
+    z-index: 5;
+}
+.menuLinks {
+    position: absolute;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    width: 30vw;
+    right: -5px;
+    top: 0px;
+    border: 1px solid grey;
+    background: lightgrey;
+    z-index: 4;
+}
+.menuLinks a {
+    padding: 10px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+.menuLinks a:hover {
+    background-color: lightgray;
+}
+/* End of code for menu bar */
 
 
 /* 4️⃣ Image Gallery */
