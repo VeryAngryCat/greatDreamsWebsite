@@ -91,12 +91,18 @@ a:hover {
     width: 50vw;
     z-index: 2;
     padding: 5px;
+    background: rgba(186, 186, 186, 0.8);
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 /* Image of the number 11:11 is fixed and close to the centre */
 .bgPic {
     position: fixed;
-    top: 500px;
+    top: 450px;
 }
 
 /* List of links, below all the other elements */
@@ -129,11 +135,6 @@ a:hover {
 }
 
 /* Dynamic adjustment */
-@media (max-width: 1250px) {
-    .quote {
-        font-size: 12px;
-    }
-}
 
 @media (max-width: 768px) {
     .linkList {
@@ -144,8 +145,11 @@ a:hover {
         width: 320px;
         height: 70px;
     }
-    .quote {
+    .quote p {
         font-size: 9px;
         top: 30px;
+    }
+    .bgPic {
+        top: 500px;
     }
 }
