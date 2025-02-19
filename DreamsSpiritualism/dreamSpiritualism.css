@@ -1,131 +1,85 @@
-  /* Body and overall background */
-  body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+  /* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('pinkclouds.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fffefe;
     margin: 0;
     padding: 0;
-    background-image: url('pinkclouds.jpg'); /* Using your image file */
-    background-size: cover;  /* Makes sure the image covers the entire page */
-    background-position: center center; /* Centers the image */
-    background-attachment: fixed; /* Keeps the background fixed while scrolling */
-    color: #fffefe;
 }
-  
-  /* Header styling */
-  header {
-    background-color: rgba(27, 162, 253, 0.626); /* Add transparency to the header for readability */
+
+/* Header styling */
+header {
+    background-color: rgba(129, 74, 233, 0.273);
     color: white;
     text-align: center;
     padding: 20px;
 }
-  
-  header h1 {
+
+header h1 {
+    text-align: center;
     font-size: 2em;
-    margin: 0;
-  }
-
-  .left-column, .center-column,.right-column {
-    margin: 20px;
-    padding: 20px;
-    background-color: rgba(201, 79, 217, 0.513);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    text-transform: uppercase;
 }
 
-.left-column ul {
-    list-style-type: none; /* Remove default list styling */
-    padding: 0;
-}
-
-.left-column li {
-    margin-bottom: 15px; /* Adds space between links */
-}
-
-.left-column a {
-    text-decoration: none; /* Remove underline */
-    color: #3498db; /* Blue link color */
-    font-size: 18px; /* Font size for the links */
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.8); /* Light background for the box */
-    border: 1px solid #3498db; /* Blue border around the box */
-    display: block; /* Makes the link take the whole line */
-    border-radius: 5px; /* Rounded corners */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.left-column a:hover {
-    background-color: #3498db; /* Change background on hover */
-    color: white; /* Change text color on hover */
-    border-color: #2980b9; /* Darker border on hover */
-}
-
-
-
-
-.center-column ul {
-    list-style-type: none; /* Remove default list styling */
-    padding: 0;
-}
-
-.center-column li {
-    margin-bottom: 15px; /* Adds space between links */
-}
-
-.center-column a {
-    text-decoration: none; /* Remove underline */
-    color: #3498db; /* Blue link color */
-    font-size: 18px; /* Font size for the links */
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.8); /* Light background for the box */
-    border: 1px solid #3498db; /* Blue border around the box */
-    display: block; /* Makes the link take the whole line */
-    border-radius: 5px; /* Rounded corners */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.center-column a:hover {
-    background-color: #3498db; /* Change background on hover */
-    color: white; /* Change text color on hover */
-    border-color: #2980b9; /* Darker border on hover */
-}
-
-
-
-
-.right-column ul {
-    list-style-type: none; /* Remove default list styling */
-    padding: 0;
-}
-
-.right-column li {
-    margin-bottom: 15px; /* Adds space between links */
-}
-
-.right-column a {
-    text-decoration: none; /* Remove underline */
-    color: #3498db; /* Blue link color */
-    font-size: 18px; /* Font size for the links */
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.8); /* Light background for the box */
-    border: 1px solid #3498db; /* Blue border around the box */
-    display: block; /* Makes the link take the whole line */
-    border-radius: 5px; /* Rounded corners */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.right-column a:hover {
-    background-color: #3498db; /* Change background on hover */
-    color: white; /* Change text color on hover */
-    border-color: #2980b9; /* Darker border on hover */
-}
-
-  
-  /* Main layout: 3 columns */
-  main {
+/* Main layout: 3 columns */
+main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
-  }
-  
+}
+
+.left-column, .center-column, .right-column {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(248, 95, 123, 0.348);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Styling for links in all columns */
+.left-column a, .center-column a, .right-column a {
+    text-decoration: none;
+    color: #ed4e93;
+    font-size: 18px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #a342df;
+    display: block;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.left-column a:hover, .center-column a:hover, .right-column a:hover {
+    background-color: #f99ac6;
+    color: white;
+    border-color: #a342df;
+}
+
+/* Image Adjustments */
+.book {
+    max-width: 50%; /* Reduce size further */
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.white-animals img {
+    width: 100%; /* Increase size */
+}
+
+.magical img {
+    width: 90%;
+}
+
+.money-text img {
+    width: 100%;
+}
+
 /* Footer styles */
 footer {
     text-align: center;
@@ -141,5 +95,12 @@ footer p {
     margin: 0;
 }
 
-
-  
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    .book-image {
+        max-width: 80%;
+    }
+}
