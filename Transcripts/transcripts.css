@@ -5,8 +5,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: auto;
     min-height: 100vh;
+
     background-color: rgb(3, 24, 3);
     background-image: url('newspaperBg.png'); 
     background-size: cover;
@@ -15,11 +17,12 @@ body {
     background-attachment: fixed;
 }
 
-/* Container for entire page (right, middle, left sections) */
+
 .container {
-    display: flex;
-    flex-direction: column; /* Stacks title and content in a column*/
     width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* Expanding menu */
@@ -63,40 +66,44 @@ body {
     background-color: lightgray;
 }
 
-/* Container for middle section (contains title) */
-.middle {
-    text-align: center;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
 .title {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
-    color: rgb(13, 2, 2);
-    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* Container for left section (contains subtopics>sub-box) */
-.left {
-    width: 50%; /* Takes up the left side space */
+/* Image Row */
+.image-row {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 25px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    flex-wrap: wrap; /* Allows wrapping on small screens */
 }
 
-.subtopics {
+.image-row img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    max-width: 100%;
+}
+
+/* Links Grid (Two Rows) */
+.links-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-    gap: 20px 40px;
-    margin-top: 20px;
-    
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto; /* Centers grid horizontally */
+    grid-template-columns: repeat(3, 1fr); /* 3 per row */
+    gap: 15px;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.sub-box {
+/* Link Boxes */
+.link-box {
     text-decoration: none;
     color: white;
     background-color: black;
@@ -109,34 +116,35 @@ body {
     justify-content: center;
     border: 2px solid white;
     transition: 0.3s;
-    width: 250px;
-    max-width: 100%;
-    padding: 15px 20px; /* Ensures content is readable */
 }
 
-.sub-box:hover {
+.link-box:hover {
     background-color: white;
     color: black;
 }
 
-/* Container for right section (contains images) */
-.right {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 30%;
-    align-items: center;
-    position: fixed; /* Keeps images in one place */
-    right: 5%;
-    top: 50%;
-    transform: translateY(-50%);
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .image-row {
+        justify-content: center; /* Center images in smaller screens */
+        gap: 20px; /* Adds spacing */
+    }
+
+    .image-row img {
+        width: 120px;
+        height: 120px;
+    }
+    .links-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-/* Puts imagges in round boxes */
-.right img {
-    width: 250px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid white;
+@media screen and (max-width: 500px) {
+    .image-row img {
+        width: 90px;
+        height: 90px;
+    }
+    .links-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
