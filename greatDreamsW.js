@@ -7,7 +7,7 @@ function toggleMenu() {
     const mLinks = document.querySelector('.menuLinks');
     const styleDisp = getComputedStyle(mLinks).display;
     if (icon.textContent.trim() === "☰") {
-        icon.textContent = '✖';
+        icon.textContent = '✕';
     } else {
         icon.textContent = "☰";
     }
