@@ -22,7 +22,7 @@ a:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-image: linear-gradient(to right, white, red);
+    background-image: linear-gradient(to bottom, white, red);
     background-attachment: fixed;
 }
 

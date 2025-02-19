@@ -31,6 +31,50 @@ main {
     padding: 20px;
 }
 
+/* Expanding menu components */
+.menuIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+}
+.icon {
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all 0.3s ease-in-out;
+    z-index: 4;
+}
+.icon.open {
+    font-size: 20px;
+    z-index: 4;
+}
+.menuLinks {
+    position: absolute;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    width: 30vw;
+    right: -5px;
+    top: 0px;
+    border: 1px solid grey;
+    background: lightgrey;
+    z-index: 3;
+}
+.menuLinks a {
+    padding: 10px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+.menuLinks p {
+   color: #ed4e93;
+}
+.menuLinks a:hover {
+    background-color: lightgray;
+}
+
+
 .left-column, .center-column, .right-column {
     margin: 20px;
     padding: 20px;
