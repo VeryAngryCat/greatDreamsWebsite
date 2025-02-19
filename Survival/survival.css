@@ -82,10 +82,12 @@ h1 {
     background-color: white;
     text-decoration: none;
     color: black;
+    text-align: start;
 }
 
 .menuLinks p {
     color: #a74616;
+    text-align: start;
 }
 
 .menuLinks a:hover {
