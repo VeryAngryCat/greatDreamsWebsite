@@ -6,10 +6,10 @@ function toggleMenu() {
     const icon = document.querySelector('.icon');
     const mLinks = document.querySelector('.menuLinks');
     const styleDisp = getComputedStyle(mLinks).display;
-    if (icon.innerHTML === "☰") {
-        icon.innerHTML = '&#10005;';
+    if (icon.textContent.trim() === "☰") {
+        icon.textContent = '✖';
     } else {
-        icon.innerHTML = '☰';
+        icon.textContent = "☰";
     }
 
     if (styleDisp === 'flex') {

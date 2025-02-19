@@ -41,12 +41,14 @@ header {
 .icon {
     position: relative;
     cursor: pointer;
+    font-family: Arial, sans-serif;
     font-size: 25px;
     transition: all 0.3s ease-in-out;
     z-index: 5;
     color: white;
 }
 .icon.open {
+    font-family: Arial, sans-serif;
     font-size: 20px;
     z-index: 5;
 }
