@@ -8,17 +8,17 @@ body {
     height: auto;
     min-height: 100vh;
     background-color: rgb(3, 24, 3);
-    background-image: url('Untitled\ design-2.png'); 
-    background-size: cover; /* Cover the full page */
-    background-position: center; /* Center the image */
-
-    background-repeat: no-repeat; /* Prevent tiling */
-    background-attachment: fixed; /* Fixed while scrolling */
+    background-image: url('newspaperBg.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
+/* Container for entire page (right, middle, left sections) */
 .container {
     display: flex;
-    flex-direction: column; /* Stacks title and content */
+    flex-direction: column; /* Stacks title and content in a column*/
     width: 80%;
 }
 
@@ -63,6 +63,7 @@ body {
     background-color: lightgray;
 }
 
+/* Container for middle section (contains title) */
 .middle {
     text-align: center;
     margin-bottom: 20px;
@@ -76,15 +77,9 @@ body {
     text-align: left;
 }
 
-.content {
-    display: flex;
-    width: 100%;
-    justify-content: flex-start; /* Keeps left side to the left */
-    align-items: flex-start;
-}
-
+/* Container for left section (contains subtopics>sub-box) */
 .left {
-    width: 50%; /* Takes left side space */
+    width: 50%; /* Takes up the left side space */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -96,9 +91,9 @@ body {
     gap: 20px 40px;
     margin-top: 20px;
     
-    width: 100%; /* Makes the grid as wide as its content */
-    margin-left: auto; /* Centers it horizontally */
-    margin-right: auto; /* Centers it horizontally */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; /* Centers grid horizontally */
 }
 
 .sub-box {
@@ -114,9 +109,9 @@ body {
     justify-content: center;
     border: 2px solid white;
     transition: 0.3s;
-    width: 250px; /* Increase this value to make the boxes wider */
-    max-width: 100%; /* Prevents excessive stretching */
-    padding: 15px 20px; /* Adjust padding to keep text readable */
+    width: 250px;
+    max-width: 100%;
+    padding: 15px 20px; /* Ensures content is readable */
 }
 
 .sub-box:hover {
@@ -124,18 +119,20 @@ body {
     color: black;
 }
 
+/* Container for right section (contains images) */
 .right {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 30%;
     align-items: center;
-    position: fixed; /* Keeps images fixed */
+    position: fixed; /* Keeps images in one place */
     right: 5%;
     top: 50%;
     transform: translateY(-50%);
 }
 
+/* Puts imagges in round boxes */
 .right img {
     width: 250px;
     height: 200px;
