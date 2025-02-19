@@ -2,12 +2,9 @@ body {
     background-image: url('Relax\ at\ night\ in\ the\ woods\ by\ the\ campfire\ -\ Campfire\ ambience\ -\ HD.jpg'); 
     background-size: cover; /* Cover the full page */
     background-position: center; /* Center the image */
-
     background-repeat: no-repeat; /* Prevent tiling */
     background-attachment: fixed; /* Fixed while scrolling */
-
     color: white; /* Set text color to white for contrast */
-    
     margin: 0; /* Removes default margin */
     padding: 0; /* Removes default padding */
     text-align: center;

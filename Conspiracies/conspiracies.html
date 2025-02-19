@@ -7,8 +7,12 @@
     <title>Conspiracies</title>
   </head>
   <body>
+    <!-- Whole page container -->
     <div class="conspPage">
+      <!-- Title image of page -->
       <header class="title"></header>
+
+      <!-- Expanding menu -->
       <div class="menuIcon">
         <span class="icon" onclick="toggleMenu()">&#x2630;</span>
         <div class="menuLinks">
@@ -33,6 +37,8 @@
           >
         </div>
       </div>
+
+      <!-- Container with all links to be shuffled and sorted into .linkBar and .sideLinkMenu -->
       <div id="temp-link-storage">
         <a href="http://www.greatdreams.com/political/ruling-elite-plans.html"
           >WHAT IS THE RULING ELITE PLANNING NEXT?</a
@@ -167,10 +173,16 @@
           >BE A WAYSEER! THIS IS US!!!</a
         >
       </div>
+
+      <!-- Fixed background picture of moon (moon.png) -->
       <div class="bgPic"></div>
+
+      <!-- Links from #temp-link-storage are sorted into these with the help of a shuffler function -->
       <div class="linkBar"></div>
       <div class="sideLinkMenu"></div>
     </div>
+
+    <!-- Links to this folder's js and the index page's one -->
     <script src="conspiracies.js"></script>
     <script src="/greatDreamsW.js"></script>
   </body>

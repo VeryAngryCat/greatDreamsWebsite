@@ -25,12 +25,14 @@ a:visited {
     background: black;
 }
 
+/* Expanding menu components */
 .menuIcon {
     position: absolute;
     top: 10px;
     right: 10px;
     z-index: 4;
 }
+
 .icon {
     position: relative;
     cursor: pointer;
@@ -39,10 +41,12 @@ a:visited {
     z-index: 5;
     color: white;
 }
+
 .icon.open {
     font-size: 20px;
     z-index: 5;
 }
+
 .menuLinks {
     position: absolute;
     padding: 20px;
@@ -65,10 +69,12 @@ a:visited {
     background-color: lightgray;
 }
 
+/* Placeholder for all the links while they are shuffled */
 #temp-link-storage {
     display: none;
 }
 
+/* Title image */
 .title {
     position: absolute;
     background: url(9:11.png);
@@ -81,6 +87,8 @@ a:visited {
     background-size: cover;
     z-index: 2;
 }
+
+/* Backround image of the moon */
 .bgPic {
     position: fixed;
     width: 60vw;
@@ -91,6 +99,7 @@ a:visited {
     top: 200px;
 }
 
+/* List of links in the form of buttons, shown as a column */
 .sideLinkMenu {
     display:flex;
     flex-direction: column;
@@ -113,6 +122,7 @@ a:visited {
     background: red;
 }
 
+/* Two links shown at the top of the page */
 .linkBar {
     display: flex;
     position: absolute;
@@ -145,6 +155,7 @@ a:visited {
     color: white !important;
 }
 
+/* Dynamic adjustment */
 @media (max-width: 768px) {
     .sideLinkMenu {
         width: 100%;

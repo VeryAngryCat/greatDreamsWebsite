@@ -1,17 +1,17 @@
 body {
-    background-image: url('Extraterrestrials bg.jpg'); /* Change this to your image */
-    background-size: cover; /* Cover the full page */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent tiling */
-    background-attachment: fixed; /* Fixed while scrolling */
-    color: white; /* Set text color to white for contrast */
-    font-family: Arial, sans-serif; /* Set a readable font */
+    background-image: url('Extraterrestrials bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 .overlay {
-    background: rgba(0, 0, 0, 0.6); /* Dark overlay effect */
+    background: rgba(0, 0, 0, 0.6); /* Darkens and integrates image */
     position: absolute;
     top: 0;
     left: 0;
@@ -19,7 +19,8 @@ body {
     height: 100%;
     z-index: -1;
 }
-/* Title Image (Header Section) */
+
+/* Title image */
 header {
     padding: 20px;
 }
@@ -30,7 +31,7 @@ header {
     margin: 0 auto;
 }
 
-/* Code for menu bar*/
+/* Code for menu bar */
 .menuIcon {
     position: absolute;
     top: 10px;
@@ -74,16 +75,15 @@ header {
 .menuLinks p {
     text-align: start;
 }
-/* End of code for menu bar */
 
 
-/* 4️⃣ Image Gallery */
+/* Image gallery */
 .image-gallery {
     
     display: flex;
-    flex-wrap: wrap; /* Allows images to wrap on small screens */
+    flex-wrap: wrap; /* When screen is small, images are shown as one column, not as a row */
     justify-content: center;
-    gap: 10px; /* Spacing between images */
+    gap: 10px;
     padding: 20px;
     
 }
@@ -91,7 +91,7 @@ header {
 
 .image-item {
     
-    background: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+    background: rgba(255, 255, 255, 0.8); /* Lighter background for contrast */
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -100,47 +100,53 @@ header {
 
 }
 
+/* Images are square and roundish */
 .image-item img {
-    
-    width: 300px; /* Make all images the same width */
-    height: 300px; /* Make all images the same height */
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
 }
 
+/* Links on images are made to be blue */
 .image-item p a {
     text-decoration: none;
     color: #007BFF;
     font-weight: bold;
 }
+
+/* List of links is in this class */
 .subtopics {
     list-style: none; /* Removes default bullets */
     padding: 0;
-    width: 850px; /* Adjust width as needed */
-    background: rgba(255, 255, 255, 0.9); /* Light background */
-    border-radius: 8px; /* Optional rounded corners */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Light shadow */
+    width: 850px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px; /* Adds rounded corners on boxes */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Gives each box a transparent light backgground */
     margin: 0 auto;
 }
 
+/* Stylised links
+/* All links except last one are made to have seprator line underneath them */
 .subtopics li {
     padding: 12px;
     text-align: center;
     font-size: 16px;
-    border-bottom: 1px solid #ccc; /* Separator line */
+    border-bottom: 1px solid lightgray;
 }
 
 .subtopics li:last-child {
-    border-bottom: none; /* Removes last separator */
+    border-bottom: none;
 }
 
+/* Links themselves are blue but become darker once hovered over */
 .subtopics a {
     text-decoration: none;
-    color: #007bff; /* Blue link color */
+    color: #007bff;
     font-weight: bold;
     display: block;
 }
 
 .subtopics a:hover {
-    color: #0056b3; /* Darker blue on hover */
+    color: #0056b3;
     background: rgba(0, 123, 255, 0.1); /* Light hover effect */
 }
