@@ -59,6 +59,9 @@ main {
     border-color: #a342df;
 }
 
+.left-column ul, .center-column ul, .right-column ul {
+    padding-inline-start: 0;
+}
 /* Image Adjustments */
 .book {
     max-width: 50%; /* Reduce size further */
