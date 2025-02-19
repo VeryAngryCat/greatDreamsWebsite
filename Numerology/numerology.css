@@ -84,46 +84,19 @@ a:hover {
 }
 
 /* Specifications for the two decorative images at the side */
-.bgPic {
+.quote {
     position: relative;
-    margin-top: 200px; /* The images of this class stayy near the top */
-}
-
-/* First instance of image is situated on the right */
-.bgPic img:first-child {
-    position:absolute;
-    height: 90vh;
-    top: -120px;
-    aspect-ratio: 1/6;
-    z-index: 1;
-    right: -220px;
-    margin-right: 2vw;
-}
-
-/* Second instance of image is situated on the left */
-.bgPic img:nth-child(2) {
-    position: absolute;
-    height: 96vh;
-    top: -120px;
-    aspect-ratio: 1/6;
-    z-index: 1;
-    left: -220px;
-    margin-left: 2vw
-}
-
-/* Text of the class is situated in the middle */
-.bgPic p  {
-    position:relative;
-    top: -10px;
+    margin-top: 90px; /* The text stays near the top and middle */
+    top: 100px;
     width: 50vw;
     z-index: 2;
     padding: 5px;
 }
 
 /* Image of the number 11:11 is fixed and close to the centre */
-.bgPic2 {
+.bgPic {
     position: fixed;
-    top: 400px;
+    top: 500px;
 }
 
 /* List of links, below all the other elements */
@@ -152,11 +125,12 @@ a:hover {
 
 .linkList a:hover{
     background:darkgrey;
+    border: 1px solid black;
 }
 
 /* Dynamic adjustment */
 @media (max-width: 1250px) {
-    .bgPic p {
+    .quote {
         font-size: 12px;
     }
 }
@@ -170,8 +144,8 @@ a:hover {
         width: 320px;
         height: 70px;
     }
-    .bgPic p {
-        font-size: 10px;
-        top: -20px;
+    .quote {
+        font-size: 9px;
+        top: 30px;
     }
 }
