@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(6, 36, 78);
+}
+/* Style for link buttons */
+.link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #00695c; /* Dark teal */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+.link-button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+
+/* Style for resource links */
+.resources a {
+    text-decoration: none;
+    color: #004d40; /* Dark teal text */
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+resources a:hover {
+    color: #00251a; /* Darker teal on hover */
+}
