@@ -80,15 +80,24 @@ a:hover {
     position: relative;
     margin-top: 200px;
 }
-.bgPic img {
+.bgPic img:first-child {
     position:absolute;
-    background: center center / cover;
-    width: 25vw;
-    top: -20px;
-    aspect-ratio: 1/1;
-    z-index: 2;
-    right: 300px;
-    margin-right: -150px;
+    height: 90vh;
+    top: -120px;
+    aspect-ratio: 1/6;
+    z-index: 1;
+    right: -220px;
+    margin-right: 2vw;
+}
+
+.bgPic img:nth-child(2) {
+    position: absolute;
+    height: 90vh;
+    top: -120px;
+    aspect-ratio: 1/6;
+    z-index: 1;
+    left: -220px;
+    margin-left: 2vw
 }
 
 .bgPic p  {

@@ -138,6 +138,9 @@ a:visited {
     border-top: 3px solid red;
     border-bottom: 3px solid red;
 }
+.linkBar a:visited {
+    color: white !important;
+}
 
 @media (max-width: 768px) {
     .sideLinkMenu {
