@@ -66,9 +66,13 @@ header {
     background-color: white;
     text-decoration: none;
     color: black;
+    text-align: start;
 }
 .menuLinks a:hover {
     background-color: lightgray;
+}
+.menuLinks p {
+    text-align: start;
 }
 /* End of code for menu bar */
 

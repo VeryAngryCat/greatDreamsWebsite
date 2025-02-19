@@ -49,6 +49,9 @@ a:hover {
     text-decoration: none;
     color: black;
 }
+.menuLinks p {
+   color: goldenrod;
+}
 .menuLinks a:hover {
     background-color: lightgray;
 }
@@ -92,7 +95,7 @@ a:hover {
 
 .bgPic img:nth-child(2) {
     position: absolute;
-    height: 90vh;
+    height: 96vh;
     top: -120px;
     aspect-ratio: 1/6;
     z-index: 1;
