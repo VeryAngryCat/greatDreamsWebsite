@@ -1,0 +1,127 @@
+body {
+    background-image: url('Unknown.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+    margin-bottom: 15px;
+    font-family: Trattatello, fantasy;
+    color: #0b0b0c;
+}
+
+
+/* Code for menu bar */
+.menuIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 4;
+}
+.icon {
+    position: relative;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    transition: all 0.3s ease-in-out;
+    z-index: 5;
+    color: white;
+}
+.icon.open {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    z-index: 5;
+}
+.menuLinks {
+    position: absolute;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    width: 30vw;
+    right: -5px;
+    top: 0px;
+    border: 1px solid grey;
+    background: lightgrey;
+    z-index: 4;
+}
+.menuLinks a {
+    padding: 10px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    text-align: start;
+}
+.menuLinks a:hover {
+    background-color: rgb(211, 211, 211);
+}
+.menuLinks p {
+    text-align: start;
+}
+
+
+/* List of links is in this class */
+.subtopics {
+    list-style: none; /* Removes default bullets */
+    padding: 0;
+    max-width: 90%;
+    width: 850px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px; /* Adds rounded corners on boxes */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Gives each box a transparent light backgground */
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Stylised links
+/* All links except last one are made to have seprator line underneath them */
+.subtopics li {
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid lightgray;
+}
+
+.subtopics li:last-child {
+    border-bottom: none;
+}
+
+/* Links themselves are blue but become darker once hovered over */
+.subtopics a {
+    text-decoration: none;
+    color: #9a6120;
+    font-weight: bold;
+    display: block;
+}
+
+.subtopics a:hover {
+    color: #0056b3;
+    background: rgba(0, 123, 255, 0.1); /* Light hover effect */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .subtopics {
+        width: 95%; /* Adjusts the width for small screens */
+        max-width: 95%;
+    }
+    
+    .image-gallery {
+        flex-direction: column; /* Makes images stack vertically */
+        align-items: center; /* Centers items */
+    }
+
+    .image-item {
+        width: 90%; /* Makes the image box responsive */
+    }
+
+    .image-item img {
+        width: 100%; /* Ensures image scales properly */
+        height: auto;
+    }
+}
