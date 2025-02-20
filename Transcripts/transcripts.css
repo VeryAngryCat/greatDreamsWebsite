@@ -54,6 +54,7 @@ body {
     border: 1px solid grey;
     background: lightgrey;
     z-index: 3;
+    text-align: start;
 }
 .menuLinks a {
     padding: 10px;
