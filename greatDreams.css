@@ -56,7 +56,7 @@ body {
     display:none;
     position: fixed;
     list-style-type: none;
-    max-height: 300px;
+    max-height: 170px;
     overflow-y: auto; /* Can scroll */
     width: 65vw;
     top: 580px;
@@ -142,6 +142,7 @@ body {
     }
     .linkList {
         top: 300px;
+        max-height: 300px;
     }
 
     .bgPicture {
