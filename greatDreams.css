@@ -53,13 +53,17 @@ body {
 
 .linkList {
     position: absolute;
+    display: none;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 4;
   }
 
   .linkList li a {
+    display: block;
     border: 1px solid black;
     margin-top: -1px; /* Prevents double borders */
     background-color: mediumaquamarine;
@@ -67,7 +71,6 @@ body {
     text-decoration: none;
     font-size: 18px;
     color: black;
-    display: block
   }
 
   .linkList li a:hover:not(.header) {
