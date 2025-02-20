@@ -27,3 +27,33 @@ body {
 resources a:hover {
     color: #00251a; /* Darker teal on hover */
 }
+/* Container for the link cloud */
+.link-cloud {
+    position: relative;
+    width: 300px; /* Adjust based on your design */
+    height: 300px; /* Adjust based on your design */
+    margin: 50px auto; /* Center the cloud */
+}
+/* Styling for individual links */
+.cloud-link {
+    position: absolute;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+cloud-link:hover {
+    background-color: #0056b3;
+}
+
+/* Positioning the links in a circular layout */
+.cloud-link:nth-child(1) { top: 10%; left: 50%; transform: translateX(-50%); }
+.cloud-link:nth-child(2) { top: 30%; left: 20%; }
+.cloud-link:nth-child(3) { top: 30%; left: 80%; }
+.cloud-link:nth-child(4) { top: 50%; left: 10%; }
+.cloud-link:nth-child(5) { top: 50%; left: 90%; }
+.cloud-link:nth-child(6) { top: 70%; left: 50%; transform: translateX(-50%); }
