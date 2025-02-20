@@ -19,8 +19,8 @@ body {
 }
 
 .bgPicture {
-    position: fixed;
-    top: 15%;
+    position: relative;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
     width: 75vw;
@@ -34,8 +34,48 @@ body {
     box-sizing: border-box;
 }
 
-.title {
+.input {
+    position: relative;
+    margin-top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('maglass.png');
+    background-position: 10px center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 10px;
+    border: 1px solid mediumaquamarine;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    z-index: 3;
+}
+
+.linkList {
     position: absolute;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 4;
+  }
+
+  .linkList li a {
+    border: 1px solid black;
+    margin-top: -1px; /* Prevents double borders */
+    background-color: mediumaquamarine;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block
+  }
+
+  .linkList li a:hover:not(.header) {
+    background-color: white;
+  }
+
+.title {
+    position: relative;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
@@ -44,12 +84,12 @@ body {
     background: url(transparentTitleLong.png);
     background-position: center;
     background-size: cover;
+    z-index: 2;
 }
 
 .buttonMenu {
-    margin-top: 50px;
-    position: absolute;
-    bottom: 30px;
+    position: fixed;
+    top: 600px;
     left: 50%;
     transform: translateX(-50%);
     display: grid;
@@ -88,19 +128,17 @@ body {
     .bgPicture {
         position: fixed;
         top: 25%;
+        margin-top: 15%;
         left: 50%;
         transform: translateX(-50%);
         width: 75vw;
         height:350px;
         
     }
+}
 
+@media (max-width: 600px){
     .button {
-        font-size: 11px;
-    }
-    @media (max-width: 600px){
-        .button {
-            font-size: 9px;
-        }
+        font-size: 9px;
     }
 }
