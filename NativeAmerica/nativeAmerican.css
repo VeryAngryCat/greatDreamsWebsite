@@ -104,7 +104,7 @@ a:hover {
 /* List of links, below all the other elements */
 .linkList {
     position: relative;
-    margin-top: 400px;
+    margin-top: 300px;
     margin-left: auto;
     right: 20px;
     display:grid;
@@ -143,11 +143,11 @@ a:hover {
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
     .linkList {
         margin-top: 300px;
-        left: 0px;
         width: 90vw;
+        align-self: auto;
     }
     .bgPic {
         display: none;
