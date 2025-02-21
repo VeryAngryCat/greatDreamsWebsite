@@ -112,7 +112,7 @@ h1 {
     .buttonMenu a {
         width: 60vw;
     } 
-    .buttonMenu{
+    .buttonMenu {
         grid-template-columns: repeat(1,1fr);
         margin-top:300px;
         top: 10px;
