@@ -15,16 +15,31 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
+    min-height: 100vh;
     background: black;
+    overflow: visible;
+}
+
+.title {
+    position: relative;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 100px;
+    background: url(transparentTitleLong.png);
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
 }
 
 .bgPicture {
-    position: fixed;
-    top: 20%;
+    position: relative;
+    top: 8vh;
     left: 50%;
     transform: translateX(-50%);
     width: 75vw;
-    height: 400px;
+    height: 40vh;
     background:
         url('darkForestMainPage.jpeg') center center / cover,
         linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 80%, rgba(0, 0, 0, 0.8) 100%);
@@ -35,9 +50,8 @@ body {
 }
 
 .input {
-    position: fixed;
-    margin-top: 100px;
-    top: 450px;
+    position: relative;
+    top: 90px;
     left: 50%;
     transform: translate(-50%, -50%);
     background-image: url('maglass.png');
@@ -54,12 +68,12 @@ body {
 
 .linkList {
     display:none;
-    position: fixed;
+    position: relative;
     list-style-type: none;
     max-height: 170px;
     overflow-y: auto; /* Can scroll */
     width: 65vw;
-    top: 580px;
+    top: 70px;
     margin: 0;
     padding: 0;
     left: 50%;
@@ -68,7 +82,7 @@ body {
     border: 1px solid black;
   }
 
-  .linkList li a {
+.linkList li a {
     display: block;
     border: 1px solid black;
     margin-top: -1px; /* Prevents double borders */
@@ -77,33 +91,21 @@ body {
     text-decoration: none;
     font-size: 18px;
     color: black;
-  }
+}
 
-  .linkList li a:hover:not(.header) {
+.linkList li a:hover:not(.header) {
     background-color: white;
-  }
-
-.title {
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 700px;
-    height: 100px;
-    background: url(transparentTitleLong.png);
-    background-position: center;
-    background-size: cover;
-    z-index: 2;
 }
 
 .buttonMenu {
-    position: fixed;
-    top: 600px;
+    position: relative;
+    top: 130px;
     left: 50%;
     transform: translateX(-50%);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    gap: 5px 5px;
 }
 
 .button {
@@ -117,7 +119,8 @@ body {
     margin: 5px;
     border-radius: 12px;
     transition-duration: 0.5s;
-    width: 15vw;
+    width: 18vw;
+    height: auto;
     cursor: pointer;
 }
 
@@ -128,7 +131,6 @@ body {
 
 @media (max-width: 800px) {
     .title {
-        position: fixed;
         background-image: url('transparentTitle.png');
         top: 10px;
         width: 300px;
@@ -136,24 +138,26 @@ body {
     }
 
     .input {
-        position: relative;
         width: 59vw;
-        top: 170px;
+        top: -300px;
     }
     .linkList {
-        top: 300px;
+        top: -300px;
         max-height: 300px;
     }
 
     .bgPicture {
-        position: fixed;
-        top: 25%;
-        margin-top: 15%;
         left: 50%;
         transform: translateX(-50%);
         width: 75vw;
         height:350px;
-        
+    }
+    .buttonMenu {
+        top: 0px;
+        gap: 0 0;
+    }
+    .button {
+        padding: 4px;
     }
 }
 
