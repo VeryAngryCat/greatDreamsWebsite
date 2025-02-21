@@ -35,7 +35,7 @@ body {
 }
 
 .input {
-    position: relative;
+    position: fixed;
     margin-top: 100px;
     top: 450px;
     left: 50%;

@@ -105,11 +105,11 @@ a:hover {
 .linkList {
     position: relative;
     margin-top: 400px;
-    margin-left: 5px;
-    left: 120px;
+    margin-left: auto;
+    right: 20px;
     display:grid;
     flex-direction: column;
-    justify-self: center;
+    justify-self:auto;
     width: 50vw;
     gap: 20px;
     z-index: 2;
