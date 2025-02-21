@@ -152,8 +152,10 @@ body {
         width: 75vw;
         height:350px;
     }
+
     .buttonMenu {
         top: 0px;
+        padding: 10px;
         gap: 0 0;
     }
     .button {
@@ -163,6 +165,6 @@ body {
 
 @media (max-width: 600px){
     .button {
-        font-size: 9px;
+        font-size: 16px;
     }
 }
