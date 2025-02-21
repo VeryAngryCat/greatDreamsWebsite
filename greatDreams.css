@@ -19,8 +19,8 @@ body {
 }
 
 .bgPicture {
-    position: relative;
-    top: 10%;
+    position: fixed;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     width: 75vw;
@@ -36,7 +36,8 @@ body {
 
 .input {
     position: relative;
-    margin-top: 400px;
+    margin-top: 100px;
+    top: 450px;
     left: 50%;
     transform: translate(-50%, -50%);
     background-image: url('maglass.png');
@@ -52,14 +53,23 @@ body {
 }
 
 .linkList {
-    position: absolute;
+    display:none;
+    position: fixed;
     list-style-type: none;
-    padding: 0;
+    max-height: 170px;
+    overflow-y: auto; /* Can scroll */
+    width: 65vw;
+    top: 580px;
     margin: 0;
+    padding: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 4;
+    border: 1px solid black;
   }
 
   .linkList li a {
+    display: block;
     border: 1px solid black;
     margin-top: -1px; /* Prevents double borders */
     background-color: mediumaquamarine;
@@ -67,7 +77,6 @@ body {
     text-decoration: none;
     font-size: 18px;
     color: black;
-    display: block
   }
 
   .linkList li a:hover:not(.header) {
@@ -75,7 +84,7 @@ body {
   }
 
 .title {
-    position: relative;
+    position: fixed;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
@@ -119,10 +128,21 @@ body {
 
 @media (max-width: 800px) {
     .title {
+        position: fixed;
         background-image: url('transparentTitle.png');
         top: 10px;
         width: 300px;
         height: 200px;
+    }
+
+    .input {
+        position: relative;
+        width: 59vw;
+        top: 170px;
+    }
+    .linkList {
+        top: 300px;
+        max-height: 300px;
     }
 
     .bgPicture {
