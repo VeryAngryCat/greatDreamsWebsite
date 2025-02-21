@@ -34,30 +34,7 @@ body {
     height: 300px; /* Adjust based on your design */
     margin: 50px auto; /* Center the cloud */
 }
-/* Styling for individual links */
-.cloud-link {
-    position: absolute;
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 15px;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-}
-cloud-link:hover {
-    background-color: #0056b3;
-}
 
-/* Positioning the links in a circular layout */
-.cloud-link:nth-child(1) { top: 10%; left: 50%; transform: translateX(-50%); }
-.cloud-link:nth-child(2) { top: 30%; left: 20%; }
-.cloud-link:nth-child(3) { top: 30%; left: 80%; }
-.cloud-link:nth-child(4) { top: 50%; left: 10%; }
-.cloud-link:nth-child(5) { top: 50%; left: 90%; }
-.cloud-link:nth-child(6) { top: 70%; left: 50%; transform: translateX(-50%); }
-/* Set the background color to green and add a leafy texture */
 body {
     background-color: #0f664c; /* green background */
     background-image: url("https://www.transparenttextures.com/patterns/leaves.png"); /* Leafy texture */
@@ -78,3 +55,11 @@ body {
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Shadow for better visibility */
     margin: 0;
   }
+
+  #climate-change
+{
+
+}
+{
+    
+}
