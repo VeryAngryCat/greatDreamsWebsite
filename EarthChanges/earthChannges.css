@@ -11,7 +11,7 @@ body {
     text-decoration: none; /* Remove underline */
     font-size: 18px;
     border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    transition: 0.3s ease; /* Smooth hover effect */
 }
 .link-button:hover {
     background-color: #004d40; /* Darker teal on hover */
@@ -24,7 +24,7 @@ body {
     font-size: 18px;
     transition: color 0.3s ease; /* Smooth hover effect */
 }
-resources a:hover {
+.resources a:hover {
     color: #00251a; /* Darker teal on hover */
 }
 /* Container for the link cloud */
