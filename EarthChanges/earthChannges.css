@@ -1,41 +1,4 @@
 body {
-    background-color: rgb(6, 36, 78);
-}
-/* Style for link buttons */
-.link-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #00695c; /* Dark teal */
-    color: white; /* White text */
-    text-decoration: none; /* Remove underline */
-    font-size: 18px;
-    border-radius: 5px; /* Rounded corners */
-    transition: 0.3s ease; /* Smooth hover effect */
-}
-.link-button:hover {
-    background-color: #004d40; /* Darker teal on hover */
-}
-
-/* Style for resource links */
-.resources a {
-    text-decoration: none;
-    color: #004d40; /* Dark teal text */
-    font-size: 18px;
-    transition: color 0.3s ease; /* Smooth hover effect */
-}
-.resources a:hover {
-    color: #00251a; /* Darker teal on hover */
-}
-/* Container for the link cloud */
-.link-cloud {
-    position: relative;
-    width: 300px; /* Adjust based on your design */
-    height: 300px; /* Adjust based on your design */
-    margin: 50px auto; /* Center the cloud */
-}
-
-body {
     background-color: #0f664c; /* green background */
     background-image: url("https://www.transparenttextures.com/patterns/leaves.png"); /* Leafy texture */
     margin: 0;
@@ -49,17 +12,37 @@ body {
   }
 
   /* Style the big heading */
-  h1 {
-    font-size: 6rem; /* Very large text */
+h1 {
+    position:absolute ;
+    left:50%;
+    transform:translateX(-50%);
+    top:10px;
+    font-size: 70px; /* Very large text */
     color: white; /* White text for contrast */
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Shadow for better visibility */
     margin: 0;
-  }
-
-  #climate-change
-{
-
+}  
+.buttonMenu{
+    position:relative; 
+    width:60vw;
+    height: auto; 
+    display: block;
 }
+/* Style for link buttons */
+.link-button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #00695c; /* Dark teal */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px;
+    border-radius: 5px; /* Rounded corners */
+    transition: 0.3s ease; /* Smooth hover effect */
+}
+.link-button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+#climate-change
 {
-    
+
 }
