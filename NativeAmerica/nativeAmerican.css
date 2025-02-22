@@ -69,7 +69,7 @@ a:hover {
     background-color: lightgray;
 }
 
-/* Title image */
+/* Header styling: image */
 .title {
     position: absolute;
     background: url(title.png);
@@ -101,7 +101,7 @@ a:hover {
     border: 2px solid darkslateblue;
 }
 
-/* List of links, below all the other elements */
+/* Styling for links */
 .linkList {
     position: relative;
     margin-top: 300px;
@@ -132,7 +132,7 @@ a:hover {
     background:mediumslateblue;
 }
 
-/* Dynamic adjustment */
+/* Dynamic adjustment for responsiveness */ 
 @media (max-width: 768px) {
     .linkList {
         margin-top: 300px;

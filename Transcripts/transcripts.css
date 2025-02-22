@@ -93,7 +93,7 @@ body {
     max-width: 100%;
 }
 
-/* Links Grid (Two Rows) */
+/* Styling for link boxes */
 .links-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 per row */
@@ -124,7 +124,7 @@ body {
     color: black;
 }
 
-/* Responsive Design */
+/* Responsive Design for responsiveness */
 @media screen and (max-width: 768px) {
     .image-row {
         justify-content: center; /* Center images in smaller screens */

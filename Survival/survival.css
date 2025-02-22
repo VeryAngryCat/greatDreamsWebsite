@@ -1,5 +1,5 @@
 body {
-    background-image: url('campfire.jpg'); /*  Uses fixed campfire image from this folder */
+    background-image: url('campfire.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -10,14 +10,12 @@ body {
     text-align: center;
 }
 
-/* Heading colour and padding adjustments */
+/* Header styling */
 header {
     background-color: #3f1b0e;
     color: white;
     padding: 30px 0;   
 }
-
-/* Specifies styyle for subtitle and heading (font, colour, position) */
 h1 {
     margin:0;
     font-size: xx-large;
@@ -94,7 +92,7 @@ h1 {
     background-color: lightgray;
 }
 
-/* Creates the space for the links */
+/*Styling for the links */
 .column {
     background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -134,7 +132,7 @@ a:hover {
     color: #000000;
 }
 
-/* Dynamic adjustments */
+/* Dynamic adjustments for responsiveness */
 @media (max-width: 768px) {
     .container {
         flex-direction: column; /* Stacks columns vertically when screen is small */
