@@ -129,6 +129,7 @@ body {
     background-color: aliceblue;
 }
 
+/* Dynamic adjustment for responsiveness */
 @media (max-width: 800px) {
     .title {
         background-image: url('transparentTitle.png');
